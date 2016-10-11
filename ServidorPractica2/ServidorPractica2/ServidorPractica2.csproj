@@ -190,6 +190,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\BacktrakingDuos.cs" />
     <Compile Include="Algorithms\BacktrakingTriple.cs" />
     <Compile Include="Algorithms\PreprocessVC.cs" />
     <Compile Include="Algorithms\SATFuerzabruta.cs" />

@@ -1,4 +1,5 @@
 ﻿using ServidorNP.Algorithms;
+using ServidorPractica2.Algorithms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +37,13 @@ namespace ServidorNP.Controllers
             Grafo grafo = new JavaScriptSerializer().Deserialize<Grafo>(json);
             PreprocessVC Vc = new PreprocessVC(grafo);
             int answ = Vc.preprocesar();
+            return Json(answ, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult VCBacktrDuos(string json)
+        {
+            Grafo grafo = new JavaScriptSerializer().Deserialize<Grafo>(json);
+            BacktrakingDuos Vc = new BacktrakingDuos(grafo);
+            int answ = Vc.vc();
             return Json(answ, JsonRequestBehavior.AllowGet);
         }
     }
