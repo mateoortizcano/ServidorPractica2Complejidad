@@ -190,14 +190,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\BacktrakingTriple.cs" />
+    <Compile Include="Algorithms\PreprocessVC.cs" />
+    <Compile Include="Algorithms\SATFuerzabruta.cs" />
+    <Compile Include="Algorithms\VCFuerzaBruta.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DatosSAT.cs" />
+    <Compile Include="Controllers\Grafo.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SATController.cs" />
+    <Compile Include="Controllers\VertexController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
