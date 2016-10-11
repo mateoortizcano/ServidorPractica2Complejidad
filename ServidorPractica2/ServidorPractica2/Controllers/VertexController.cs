@@ -1,4 +1,6 @@
 ﻿using ServidorNP.Algorithms;
+using ALGORITHMSVCT;
+using ControllerGrafo;
 using ServidorPractica2.Algorithms;
 using System;
 using System.Collections.Generic;

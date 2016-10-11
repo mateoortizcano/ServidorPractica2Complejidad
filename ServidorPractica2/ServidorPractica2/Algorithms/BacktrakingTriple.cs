@@ -1,10 +1,11 @@
 ﻿using ServidorNP.Controllers;
+using ControllerGrafo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ServidorNP.Algorithms
+namespace ALGORITHMSVCT
 {
     public class BacktrakingTriple
     {
@@ -18,6 +19,17 @@ namespace ServidorNP.Algorithms
             nro_nodos = Grafo.Count();
             asignacion = new List<int>();     
             for (int i = 0; i < grafo.grafo.Count(); ++i)
+            {
+                asignacion.Add(-1);
+            }
+        }
+
+        public BacktrakingTriple(List<List<int>> Grafo1)
+        {
+            Grafo = Grafo1;
+            nro_nodos = Grafo.Count();
+            asignacion = new List<int>();
+            for (int i = 0; i < Grafo1.Count(); ++i)
             {
                 asignacion.Add(-1);
             }
