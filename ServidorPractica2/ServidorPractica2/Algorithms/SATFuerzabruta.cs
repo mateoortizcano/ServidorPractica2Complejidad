@@ -3,16 +3,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Threading.Tasks;
 
-namespace ServidorNP.Algorithms
+
+namespace ALGORIHTMS
 {
     public class SATFuerzabruta
     {
-        List<List<int>> formula;
-        List<int> variables;
-        int nro_clausulas;
-        int[,] estados = new int[100, 100];
-        int fila = 0;
+        static List<List<int>> formula;
+        static List<int> variables;
+        static int nro_clausulas;
+        static int[,] estados = new int[100, 100];
+        static int fila = 0;
 
         public SATFuerzabruta(DatosSAT sat)
         {
@@ -20,7 +22,15 @@ namespace ServidorNP.Algorithms
             variables = sat.variables;
             nro_clausulas = sat.nro_clausulas;
         }
-        public  void generar()
+
+        public SATFuerzabruta(List<List<int>>formula1, List<int>variables1, int nro_clausulas1)
+        {
+            formula = formula1;
+            variables = variables1;
+            nro_clausulas = nro_clausulas1;
+        }
+
+        public static void generar()
         {
             for (int i = 1; i <= variables.Count(); ++i)
             {
